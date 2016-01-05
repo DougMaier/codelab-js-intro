@@ -3,13 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>JavaScript Intro</title>
+    <style media="screen">
+      h1 {
+        font-size: 1.5em;
+        margin-bottom: 0em;
+      }
+      h2 {
+        font-size: 1.25em;
+        margin-bottom: 0em;
+      }
+    </style>
   </head>
   <body>
-    Hey, I've got a button here!
+    <h1>Hey, let me tell you a joke!</h1>
     <br>
-    <button id="jstestbutton" type="button" name="jsbutton_name">Click Me!</button>
+    <button id="jstestbutton" type="button" name="jsbutton_name">OK, tell me a Joke!</button>
+    <h2>Here comes the joke!</h2>
+    <p id="joketext">
+      Your new joke is awaiting you.
+    </p>
     <script type="text/javascript">
       /* alert('Blargh!') */
+      document.getElementById('jstestbutton').onclick = function() {
+        // body...
+        document.getElementById('joketext').innerHTML = "Here's your new joke. (Isn't that funny!)"
+      }
     </script>
   </body>
 </html>
