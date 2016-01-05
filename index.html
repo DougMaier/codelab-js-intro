@@ -23,9 +23,12 @@
       Your new joke is awaiting you.
     </p>
     <script type="text/javascript">
-      /* alert('Blargh!') */
+      /*
+        Java Script Lint tools may raise a warning when semi-colons aren't used
+        at the end of the 2nd and 3rd lines.  We can ignore these warnings for
+        the time being.
+      */
       document.getElementById('jstestbutton').onclick = function() {
-        // body...
         document.getElementById('joketext').innerHTML = "Here's your new joke. (Isn't that funny!)"
       }
     </script>
