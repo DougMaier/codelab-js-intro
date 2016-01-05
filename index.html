@@ -24,13 +24,20 @@
     </p>
     <script type="text/javascript">
       /*
-        Java Script Lint tools may raise a warning when semi-colons aren't used
+        NOTE 1: Java Script Lint tools may raise a warning when semi-colons aren't used
         at the end of the 2nd and 3rd lines.  We can ignore these warnings for
         the time being.
       */
+      /*
+        Note 2: The following is the 'corrected' version of the initial apporach with semi-colons
+        added at the end of the 2nd & 3rd lines of JavaScript.
+        document.getElementById('jstestbutton').onclick = function() {
+          document.getElementById('joketext').innerHTML = "Here's your new joke. (Isn't that funny!)";
+      */
+      /* Final version using Alert in place of .innerHTML */
       document.getElementById('jstestbutton').onclick = function() {
-        document.getElementById('joketext').innerHTML = "Here's your new joke. (Isn't that funny!)"
-      }
+        alert("Here's your new joke. (Isn't that funny!)");
+      };
     </script>
   </body>
 </html>
